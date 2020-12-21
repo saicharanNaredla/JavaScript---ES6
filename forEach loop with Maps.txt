@@ -1,0 +1,12 @@
+//forEach loop with Maps
+
+let myMapo = new Map([["fname","krishna"],["lname","hii hello"]]);
+
+myMapo.forEach(mapFunction);
+
+function mapFunction(value,key,callingMap){
+  console.log(key + " " + value);
+  console.log(myMapo  === callingMap);
+  
+  
+}

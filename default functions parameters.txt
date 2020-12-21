@@ -1,0 +1,11 @@
+//default functios parameters
+ let percetageBonus = () => 0.1;
+
+let getValue = function(value=20,bonus = 10){
+  console.log(value+bonus*percetageBonus());
+  console.log(arguments.length);
+};
+getValue();
+getValue(10);
+getValue(40,30);
+getValue(undefined,30);

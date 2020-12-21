@@ -1,0 +1,7 @@
+//Weak Maps
+
+let myMapk = new WeakMap() ;
+let op1 = {};
+
+myMapk.set(op1,"vijay devarakonda");
+console.log(myMapk.get(op1));

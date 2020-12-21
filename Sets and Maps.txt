@@ -1,0 +1,68 @@
+//Sets and Maps
+
+let mySet = Object.create(null);
+mySet.id = true;
+
+if(mySet.id){
+  console.log("id exits");
+}
+mySet.ida = 0;
+
+if(mySet.ida){
+  console.log("ida exits");
+}
+
+let myMap = Object.create(null);
+myMap.name = "vijay";
+let val = myMap.name;
+console.log(val);
+
+myMap[100] = "Hello";
+console.log(myMap["100"]);
+
+let ob1 = {};
+let ob2 = {};
+
+myMap[ob1] = "world";
+console.log(myMap[ob2]);
+
+console.log(ob1.toString());
+console.log(ob2.toString());
+
+let mySet1 = new Set();
+let o1 = {};
+let o2 = {};
+
+mySet1.add("Set");
+console.log(mySet1.size);
+mySet1.add(1);
+mySet1.add(1);
+console.log(mySet1.size);
+
+
+mySet1.add(o1);
+mySet1.add(o2);
+
+
+
+
+console.log(mySet1.size);
+
+let newSet = new Set([1,2,3,4,4,4,4]);
+console.log(newSet.size);
+
+let chainSet = new Set().add("Hello").add("world");
+console.log(chainSet.size);
+
+console.log(newSet.has(1));
+console.log(newSet.has(5));
+console.log(newSet.has(1));
+console.log(newSet.size);
+
+let mySet2 = new Set();
+let key = {};
+mySet2.add(key);
+console.log(mySet2.size);
+key = null ;
+console.log(mySet2.size);
+key = [...mySet2][0];

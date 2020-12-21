@@ -1,0 +1,9 @@
+//backtick
+
+let usr = "jam";
+
+let gret = `Welcome  ${usr} to "hello" 'single quotes'20201
+                 hii
+                 hellooo`;
+
+console.log(gret);

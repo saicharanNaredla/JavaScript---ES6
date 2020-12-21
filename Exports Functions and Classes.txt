@@ -1,0 +1,6 @@
+//export functions and Classes
+
+dd("hello export function");
+
+let gm  = new GreMess();
+gm.dd();

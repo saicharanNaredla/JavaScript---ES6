@@ -1,0 +1,26 @@
+//Arrow Functions
+var getRegValue  = function(){
+  return 10;
+}
+console.log('getRegValue is'+getRegValue());
+
+const getArrowvalue = () =>{
+
+  return 11;
+
+}
+
+
+
+console.log('getArrowValue is'+getArrowvalue());
+
+
+const getArrowValue1 = (m) => 10*m;
+
+console.log('getArrowValue1 is   '+getArrowValue1(7));
+
+const getArrowValue2 = (m,b) => 10*m+b;
+
+console.log('getArrowValue2 is   '+getArrowValue2(7,7));
+
+console.log('type is  '+ typeof getArrowValue1);

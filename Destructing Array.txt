@@ -1,0 +1,54 @@
+//Destructing Array
+
+let employeee = ["sai","Bing","Male"];
+
+let [fname,lname,gender] = employeee;
+
+console.log(fname);
+console.log(lname);
+console.log(gender);
+
+
+let employeeee = ["sai","Bing"];
+let [fnamee,lnamee,gendeer] = employeeee;
+
+
+console.log(fnamee);
+console.log(lnamee);
+console.log(gendeer);
+
+let employeeeee = ["sai","Bing","Male"];
+let [, ,gendeeer] = employeeeee;
+
+
+//console.log(fnamee);
+//console.log(lnamee);
+console.log(gendeeer);
+
+
+let employeeeeee = ["sai","Bing","Male","hello"];
+let [fnameee,...elements] = employeeeeee;
+
+
+console.log(fnameee);
+console.log(elements);
+//console.log(gendeer);
+
+let mployeeee = ["sai","Bing","female"];
+let [namee,lamee,geneer="Male"] = mployeeee;
+
+
+console.log(namee);
+console.log(lamee);
+console.log(geneer);
+
+let emp ={
+  firstNamee : "vinay",
+  lnn : "fsfs",
+  gebm : "Male"
+};
+let {firstNamee : f,lnn: l,gebm : g}= emp;
+
+console.log(f);
+console.log(l);
+console.log(g);

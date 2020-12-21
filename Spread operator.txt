@@ -1,0 +1,3 @@
+//Spread Operator
+let colorArray = ['Orange','Yellow','Indigo'];
+displayColors(message, ...colorArray);

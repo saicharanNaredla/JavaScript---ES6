@@ -1,0 +1,14 @@
+// Symbol Iterator
+
+//for..of --> iterator --> symbol.iterator
+
+let stry = "Hello" ;
+let arry = [1,2,3];
+let numy = 5 ;
+let objy = {namen : "Charan"};
+
+console.log("For String -" + typeof stry[Symbol.iterator]);
+console.log("For array -" + typeof arry[Symbol.iterator]);
+console.log("For number -" + typeof numy[Symbol.iterator]);
+
+console.log("For object -" + typeof objy[Symbol.iterator]);

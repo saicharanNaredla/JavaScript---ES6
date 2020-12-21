@@ -1,0 +1,18 @@
+//class Body and Methods
+
+class P2 {
+  constructor(name){
+    this.name = name;
+    console.log(this.name+ "  Constructor")
+  }
+  static staticMethod(){
+    console.log("Static method");
+  }
+  gPerson(){
+    console.log("Hello " + this.name);
+  }
+}
+
+let q = new P2("Namtratha");
+P2.staticMethod();
+q.gPerson();

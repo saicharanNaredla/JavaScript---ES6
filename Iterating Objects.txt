@@ -1,0 +1,27 @@
+//Iterating Objects
+
+
+
+let personk = {
+  fname : "CharanPort",
+  lname : "Naredla"
+}
+
+
+
+personk[Symbol.iterator] = function(){
+  let properties = Object.keys(personk);
+  let count = 0;
+  let isDone = false;
+  let next = () => {
+    if(count>=properties.length){
+      isDone = true;
+    }
+    return {done:isDone, value: this[properties[count++]]};
+  }
+  return {next}
+}
+for(let j of personk){
+console.log(j);
+
+}

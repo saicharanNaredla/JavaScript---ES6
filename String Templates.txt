@@ -1,0 +1,7 @@
+//String Templates 
+
+let user = "Charan";
+
+let greet = "Welcome " + user + " to 2020";
+
+console.log(greet);

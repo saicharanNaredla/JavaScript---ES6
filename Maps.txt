@@ -1,0 +1,18 @@
+//Maps
+let myMapp  = new Map();
+myMapp.set("fnam","sainana");
+myMapp.set("age",30);
+
+console.log(myMapp.get("fnam"));
+
+let l1 = {};
+let l2 = {};
+
+myMapp.set(l1,10);
+myMapp.set(l2,20);
+
+console.log(myMapp.get(l1));
+myMapp.delete("fnam");
+myMapp.clear();
+console.log(myMapp.size);
+console.log(myMapp.has("fnam"));

@@ -1,0 +1,24 @@
+//Class Inheritence
+
+class P3{
+      constructor(name1){
+        console.log(name1+" Person constructor");
+
+      }
+      getID(){
+        return 10;
+      }
+}
+
+class Empa extends P3{
+  constructor(name1){
+    super(name1);
+    console.log(name1 + " Employee Constructor");
+  }
+   getID(){
+     //return 66;
+     return super.getID();
+   }
+}
+let e = new Empa('Naredla');
+console.log(e.getID());

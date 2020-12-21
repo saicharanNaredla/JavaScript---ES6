@@ -1,0 +1,12 @@
+//Modules
+//Named Exports
+export let fnam1 = "salar" ;
+
+console.log(hii);
+
+console.log(`${hii} ${laname}`);
+
+console.log(`${ab} ${ba}`);
+
+obj.nname = "upasana";
+console.log(obj.nname);

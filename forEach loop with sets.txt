@@ -1,0 +1,9 @@
+//forEach loop with sets
+
+let mySeto = new Set([1,2,3]);
+mySeto.forEach(setFunction);
+function setFunction(value,key,callingSet){
+  console.log(key+" "+value);
+  console.log(mySeto === callingSet);
+  
+}

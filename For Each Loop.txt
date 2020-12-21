@@ -1,0 +1,7 @@
+//forEach loop
+var numbers = [2,4,5,6,7];
+numbers.forEach(arrayFunction);
+function arrayFunction(element,index,array){
+  console.log("arr["+index+"]= "+element);
+  
+};

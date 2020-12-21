@@ -1,0 +1,29 @@
+//Symbols
+
+let s = Symbol("First Symbol");
+console.log(typeof s);
+console.log(s.toString());
+
+let s2 = Symbol();
+let s3 = Symbol();
+
+console.log(s2===s3);
+
+let s4 = Symbol("charan");
+let s5 = Symbol("charan");
+
+console.log(s4===s5);
+
+let s6 = Symbol.for('RegSymbol');
+let s7 = Symbol.for('RegSymbol');
+
+console.log(s6===s7);
+console.log(Symbol.keyFor(s6));
+
+let fnae = Symbol('FirstName');
+let persob ={
+  [fnae] : "charan"
+};
+
+console.log(Object.getOwnPropertyNames(persob));
+console.log(Object.getOwnPropertySymbols(persob));

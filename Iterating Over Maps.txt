@@ -1,0 +1,31 @@
+//iterating over maps
+let myMape = new Map([
+  ["fname","charan"],
+  ["lname","naredla"]
+]);
+
+
+
+for(let entry of myMape.entries())
+{
+  console.log(`${entry[0]} -> ${entry[1]}`);
+  
+}
+
+for(let [key,value] of myMape.entries())
+{
+  console.log(`${key} -> ${value}`);
+  
+}
+
+
+
+for(let key of myMape.keys()){
+  console.log(key);
+  
+}
+
+for(let value of myMape.values()){
+  console.log(value);
+  
+}

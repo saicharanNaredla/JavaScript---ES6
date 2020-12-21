@@ -1,0 +1,8 @@
+//weakSet
+
+let set3 = new WeakSet();
+let key1 = {}
+set3.add(key1);
+console.log(set3.has(key1));
+
+key1 = null;
